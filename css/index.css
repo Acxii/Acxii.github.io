@@ -3970,7 +3970,7 @@ h1.page-title + .tag-cloud-list {
 #article-container h6:before {
   position: absolute;
   top: calc(50% - 7px);
-  color: #70f3ff;
+  color: #ffc1cc;
   content: '\f1b0';
   line-height: 1;
   -webkit-transition: all 0.2s ease-out;
