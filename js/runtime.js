@@ -2,7 +2,7 @@ var now = new Date();
 function createtime() {
   // 当前时间
   now.setTime(now.getTime() + 1000);
-  var bainian = new Date('11/05/2123 00:00:00');  //  100年之后
+  var bainian = new Date('2123/05/11 00:00:00');  //  100年之后
   var grt = new Date("2023/05/11 00:00:00");	// 网站诞生时间
   var new_date = Math.abs(bainian - now);
   new_date = Math.floor(new_date / (1000)); // 百年之后的时间

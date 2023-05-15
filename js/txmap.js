@@ -40,7 +40,10 @@ function showWelcome() {
         hello = ipLoacation.result.ad_info.nation;
     }
     catch (err) {
-      return  document.getElementById("welcome-info").innerHTML ='<center>🎉 <span>欢迎访问</span> 🎉</center>'
+        let html = document.getElementById("welcome-info");
+        if (!html) return; 
+        html.innerHTML = '<center>🎉 <span>欢迎访问</span> 🎉</center>'
+        return
     }
     //根据国家、省份、城市信息自定义欢迎语
     switch (hello) {

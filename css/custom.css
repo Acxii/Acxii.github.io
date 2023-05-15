@@ -555,3 +555,144 @@ h6::before {
     transform: scale(1.1);
   }
 }
+
+/* 头像框样式 */
+.card-info-avatar .author-status-box {
+  position: absolute;
+  bottom: 0;
+  left: calc(100% - 28px);
+  width: 28px;
+  height: 28px;
+  border: 1px solid #d0d7de;
+  border-radius: 2em;
+  background-color: #f8f8f8f8;
+  transition: 0.4s;
+  overflow: hidden;
+}
+
+[data-theme="dark"] .card-info-avatar .author-status-box {
+  background-color: #222222f2;
+  border: 1px solid #5c6060;
+}
+
+.card-info-avatar .author-status-box .author-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+  padding: 0 5px;
+}
+
+.card-info-avatar .author-status-box:hover {
+  width: 105px;
+}
+
+.card-info-avatar .author-status-box:hover .author-status span {
+  width: 105px;
+  margin-left: 4px;
+}
+
+.card-info-avatar .author-status-box .author-status span {
+  width: 0;
+  font-size: 12px;
+  height: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: 0.4s;
+}
+
+.card-widget .card-info-avatar {
+  display: inline-block;
+  position: relative;
+}
+
+/* 首页文章三角形上下跳动 */
+.recent-post-arrow {
+  animation: ddd 3s linear infinite;
+}
+
+@keyframes ddd {
+  0% {
+    top: 30px
+  }
+
+  10% {
+    top: 20px
+  }
+
+  20% {
+    top: 30px
+  }
+
+  30% {
+    top: 20px
+  }
+
+  60% {
+    top: 22px
+  }
+
+  90% {
+    top: 20px
+  }
+
+  100% {
+    top: 20px
+  }
+}
+
+
+/* 个人信息卡片 */
+/* 个人信息卡片背景图 */
+[data-theme="light"] #aside-content>.card-widget.card-info {
+  background-image: url('../img/lightBgi.png');
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-size: 100%;
+}
+
+[data-theme="dark"] #aside-content>.card-widget.card-info {
+  background-image: url('../img/blackBgi.png');
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-size: 100%;
+}
+
+
+/* 头像呼吸灯 */
+[data-theme="light"] .avatar-img {
+  animation: huxi_light 4s ease-in-out infinite;
+}
+
+[data-theme="dark"] .avatar-img {
+  animation: huxi_dark 4s ease-in-out infinite;
+}
+
+@keyframes huxi_light {
+  0% {
+    box-shadow: 0px 0px 1px 1px #fa9b96;
+  }
+
+  50% {
+    box-shadow: 0px 0px 5px 5px #fa9b96;
+  }
+
+  100% {
+    box-shadow: 0px 0px 1px 1px #fa9b96;
+  }
+}
+
+@keyframes huxi_dark {
+  0% {
+    box-shadow: 0px 0px 1px 1px #62567b;
+  }
+
+  50% {
+    box-shadow: 0px 0px 5px 5px #62567b;
+  }
+
+  100% {
+    box-shadow: 0px 0px 1px 1px #62567b;
+  }
+}
