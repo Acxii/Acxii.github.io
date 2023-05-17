@@ -38,3 +38,50 @@ function randomPost() {
         }
     })
 }
+
+//动态标题
+var OriginTitile = document.title;
+var titleTime;
+document.addEventListener('visibilitychange', function () {
+  if (document.hidden) {
+    //离开当前页面时标签显示内容
+    document.title = '👀发生甚么事了~';
+    clearTimeout(titleTime);
+  } else {
+    //返回当前页面时标签显示内容
+    document.title = '☘️欢迎回来~';
+    //两秒后变回正常标题
+    titleTime = setTimeout(function () {
+      document.title = OriginTitile;
+    }, 2000);
+  }
+});
+
+
+// 自定义导航栏
+document.addEventListener('pjax:complete', tonav);
+document.addEventListener('DOMContentLoaded', tonav);
+//响应pjax
+function tonav() {
+    document.getElementById("name-container").setAttribute("style", "display:none");
+    var position = $(window).scrollTop();
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        if (scroll > position) {
+            document.getElementById("name-container").setAttribute("style", "");
+            document.getElementsByClassName("menus_items")[1].setAttribute("style", "display:none!important");
+        } else {
+            document.getElementsByClassName("menus_items")[1].setAttribute("style", "");
+            document.getElementById("name-container").setAttribute("style", "display:none");
+        }
+        position = scroll;
+    });
+    //修复没有弄右键菜单的童鞋无法回顶部的问题
+    document.getElementById("page-name").innerText = document.title.split(" | Acxii")[0];
+}
+
+function scrollToTop() {
+    document.getElementsByClassName("menus_items")[1].setAttribute("style", "");
+    document.getElementById("name-container").setAttribute("style", "display:none");
+    btf.scrollToDest(0, 500);
+}
