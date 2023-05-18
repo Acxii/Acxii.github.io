@@ -50,3 +50,7 @@ createtime2();
 console.log = function () { };
 console.error = function () { };
 console.warn = function () { };
+
+
+// 监听控制台是否开启
+

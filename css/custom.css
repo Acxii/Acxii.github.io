@@ -7,6 +7,48 @@
   background: transparent !important;
 }
 
+/* 夜间主题色 */
+[data-theme=dark] {
+  --global-bg: #0d0d0d;
+  --font-color: rgba(255, 255, 255, 0.8);
+  --hr-border: rgba(255, 255, 255, 0.4);
+  --hr-before-color: rgba(255, 255, 255, 0.7);
+  --search-bg: #121212;
+  --search-input-color: rgba(255, 255, 255, 0.7);
+  --search-result-title: rgba(255, 255, 255, 0.9);
+  --preloader-bg: #0d0d0d;
+  --preloader-color: rgba(255, 255, 255, 0.7);
+  --tab-border-color: #2c2c2c;
+  --tab-botton-bg: #2c2c2c;
+  --tab-botton-color: rgba(255, 255, 255, 0.7);
+  --tab-button-hover-bg: #383838;
+  --tab-button-active-bg: #121212;
+  --card-bg: #121212;
+  --sidebar-bg: #121212;
+  --btn-hover-color: #787878;
+  --btn-color: rgba(255, 255, 255, 0.7);
+  --btn-bg: #1f1f1f;
+  --text-bg-hover: #383838;
+  --light-grey: rgba(255, 255, 255, 0.7);
+  --dark-grey: rgba(255, 255, 255, 0.2);
+  --white: rgba(255, 255, 255, 0.9);
+  --text-highlight-color: rgba(255, 255, 255, 0.9);
+  --blockquote-color: rgba(255, 255, 255, 0.7);
+  --blockquote-bg: #2c2c2c;
+  --reward-pop: #2c2c2c;
+  --toc-link-color: rgba(255, 255, 255, 0.6);
+  --hl-color: rgba(255, 255, 255, 0.7);
+  --hl-bg: #171717;
+  --hltools-bg: #1a1a1a;
+  --hltools-color: #90a4ae;
+  --hlnumber-bg: #171717;
+  --hlnumber-color: rgba(255, 255, 255, 0.4);
+  --hlscrollbar-bg: #1f1f1f;
+  --hlexpand-bg: linear-gradient(180deg, rgba(23, 23, 23, 0.6), rgba(23, 23, 23, 0.9));
+  --scrollbar-color: #1f1f1f;
+  --timeline-bg: #1f1f1f
+}
+
 /* 白天模式遮罩透明 */
 #footer::before {
   background: transparent !important;
@@ -45,9 +87,9 @@ svg.social_icon {
 
 /* 页面样式调节 */
 :root {
-  --trans-light: rgba(255, 255, 255, 0.8);
-  --trans-dark: rgba(25, 25, 25, 0.8);
-  --border-style: none;
+  --trans-light: rgba(255, 255, 255, 0.7);
+  --trans-dark: rgba(25, 25, 25, 0.7);
+  --border-style: 1px solid rgb(224, 195, 252);
   --backdrop-filter: blur(6px) saturate(130%);
 }
 
@@ -79,12 +121,12 @@ div#archive {
 
 /* 导航栏 */
 #page-header.nav-fixed #nav {
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.4);
   backdrop-filter: var(--backdrop-filter);
 }
 
 [data-theme="dark"] #page-header.nav-fixed #nav {
-  background: rgba(0, 0, 0, 0.7) !important;
+  background: rgba(0, 0, 0, 0.4) !important;
 }
 
 /* 夜间模式遮罩 */
