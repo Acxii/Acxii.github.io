@@ -26,12 +26,12 @@ function createtime1() {
         console.log.bind(
             console,
             `\n%c${ascll[0]}%c ${ascll[1]} %c${ascll[2]}%c ${ascll[3]}%c ${ascll[4]}\n\n%c ${ascll[5]}\n`,
-            "color:#5D9FFF",
-            "color:#5D9FFF",
+            "color:#5D9FFF;font-size:14px",
+            "color:#5D9FFF;font-size:14px",
             "",
-            "color:#5D9FFF",
+            "color:#5D9FFF;font-size:12px",
             "",
-            "color:#5D9FFF"
+            "color:#5D9FFF;font-size:14px"
         )
     );
 }
