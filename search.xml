@@ -4,11 +4,36 @@
   
     
     <entry>
-      <title>Hello World</title>
-      <link href="/2023/05/18/Hello%20World/"/>
-      <url>/2023/05/18/Hello%20World/</url>
+      <title>跑路</title>
+      <link href="/2023/05/19/%E8%B7%91%E8%B7%AF/"/>
+      <url>/2023/05/19/%E8%B7%91%E8%B7%AF/</url>
       
-        <content type="html"><![CDATA[<hr><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;Hello world&quot;</span>);</span><br></pre></td></tr></table></figure><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">Cout &lt;&lt; <span class="string">&quot;Hello World&quot;</span>;</span><br></pre></td></tr></table></figure><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">System.out.println(<span class="string">&quot;Hello World&quot;</span>);</span><br></pre></td></tr></table></figure><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> &quot;Hello world&quot;</span><br></pre></td></tr></table></figure><h3 id="还有相关功能尚未实现-还有相关bug…之后又会是什么样呢…"><a href="#还有相关功能尚未实现-还有相关bug…之后又会是什么样呢…" class="headerlink" title="还有相关功能尚未实现,还有相关bug…之后又会是什么样呢…"></a>还有相关功能尚未实现,还有相关bug…之后又会是什么样呢…</h3>]]></content>
+        <content type="html"><![CDATA[<h2 id="我跑路了"><a href="#我跑路了" class="headerlink" title="我跑路了"></a>我跑路了</h2><p>之前魔改butterfly还觉得很有动力,但是在别人教程不适配,以及自己改不好的情况下<br>虽然花费了时间,但是与想象中的状态还是差别较大…</p><p>所以,干脆直接换了一个主题…</p><p>但这个也不会丢弃,毕竟自己逐渐搭建起来的,还是有点感情的(大嘘),绑个二级域名留着做纪念吧</p><p><img src="https://cdn.jsdelivr.net/gh/acxii/images@main/2023/05/20230517231037.jpg" alt="芝士图片"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 娱乐 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>告终</title>
+      <link href="/2023/05/19/%E5%91%8A%E7%BB%88/"/>
+      <url>/2023/05/19/%E5%91%8A%E7%BB%88/</url>
+      
+        <content type="html"><![CDATA[<h2 id="历程"><a href="#历程" class="headerlink" title="历程"></a>历程</h2><ol><li>历经几天,只能说搭建了一个雏形,好多功能以及效果都并未实现.<br>不过好在跑起来了,后续网站会不会使用也是个问题,当时萌生了想法就去做了.</li><li>也并不是完全没有收获,逐渐了解了通过控制台调整bug的流程,也了解了一些未接触的html语法(虽说本来就不太了解).</li><li>对于markdown的语法格式有了一定的了解,能写出基本的md结构</li><li>图床搭建,静态加速,域名解析…</li></ol><h2 id="感想"><a href="#感想" class="headerlink" title="感想"></a>感想</h2><p>虽说大部分copy,但是不适配真的很烦人,自己还得根据控制台的报错,或者浏览器的样式自己一步一步改,<br>要是一开始选择一个容易配置的主题是否会轻松很多呢?虽说在这个主题上花费了几天的时间,但是效果还是不是很满意.</p><h2 id="总之"><a href="#总之" class="headerlink" title="总之"></a>总之</h2><p>跟着大佬的脚步一步步实现,但是有很多效果并不如意…<br>自己尝试修改但始终未果…<br>就这样结束吧…<br>也算是一段接触从未接触过领域的体验吧…</p>]]></content>
       
       
       <categories>

@@ -85,3 +85,23 @@ function scrollToTop() {
     document.getElementById("name-container").setAttribute("style", "display:none");
     btf.scrollToDest(0, 500);
 }
+
+
+// toggleWinbox() 美化按钮完工
+toggleWinbox = function () {
+    debounce(function () {
+        new Vue({
+            data: function () {
+                this.$notify({
+                    title: "🚫尚未实现该功能",
+                    message: "站长已跑路,该网站只是作为纪念",
+                    position: 'top-left',
+                    offset: 62,
+                    showClose: true,
+                    type: "error",
+                    duration: 5000
+                });
+            }
+        })
+    }, 300)
+}
